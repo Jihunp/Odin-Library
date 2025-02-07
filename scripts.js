@@ -52,7 +52,6 @@ function displayLibrary() {
       `;
       libDisplay.innerHTML += row;
   })
-  console.log("coconuts")
 }
 
 
@@ -63,6 +62,16 @@ function addBookToLibrary() {
 function editBook() {
 
 }
+
+
+function openDialog() {
+  document.getElementById("new-book-dialog").showModal();
+}
+
+function closeDialog() {
+  document.getElementById("new-book-dialog").close();
+}
+
 
 
 setDisplayLibrary()
