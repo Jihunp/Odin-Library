@@ -1,87 +1,98 @@
+/* General Styles */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
+  background-color: #fef9f3; /* Light pastel peach */
   text-align: center;
+  color: #3e3e3e;
 }
 
+/* Container */
 .library-container {
   max-width: 800px;
   margin: 20px auto;
   padding: 20px;
-  background: white;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background: #e3f2fd; /* Soft sky blue */
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Table */
 table {
   width: 100%;
   border-collapse: collapse;
   margin-top: 20px;
+  background: #fffdfa; /* Elegant champagne white */
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 th, td {
   padding: 12px;
-  border: 1px solid #ddd;
+  border: 1px solid #f4d6a0; /* Warm pastel gold */
   text-align: left;
 }
 
 th {
-  background-color: #007bff;
-  color: white;
+  background-color: #ffdbac; /* Soft pastel apricot */
+  color: #333;
 }
 
+/* Buttons */
 button {
   margin-top: 10px;
   padding: 10px 15px;
   border: none;
-  border-radius: 5px;
+  border-radius: 8px;
   cursor: pointer;
   font-size: 16px;
+  transition: 0.3s ease-in-out;
 }
 
 button:hover {
-  opacity: 0.8;
+  opacity: 0.85;
 }
 
-.dummy-display {
-  margin-top: 20px;
-}
-
-dialog {
-  border: none;
-  border-radius: 8px;
-  padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-input, select {
-  padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
+/* Primary Buttons */
 button[type="submit"] {
-  background-color: #28a745;
-  color: white;
+  background-color: #f3a683; /* Refined pastel coral */
+  color: #fff;
 }
 
 button[type="submit"]:hover {
-  background-color: #218838;
+  background-color: #e58e6f;
 }
 
 button[type="button"] {
-  background-color: #dc3545;
+  background-color: #f7b7a3; /* Soft pastel rose */
   color: white;
 }
 
 button[type="button"]:hover {
-  background-color: #c82333;
+  background-color: #f29b91;
+}
+
+/* Dialog / Modal */
+dialog {
+  border: none;
+  border-radius: 12px;
+  padding: 20px;
+  background: #fcf6bd; /* Light pastel vanilla */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Form Layout */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Labels */
+form label {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  color: #3e3e3e;
 }
