@@ -21,7 +21,6 @@
       <tbody id="library-display">
 
       </tbody>
-      <button id="display-book"> display books</button>
     </table>
     <button>Add Sample Book</button>
   </div>
@@ -29,16 +28,25 @@
   <div class="dummy-display">
     <button onclick="openDialog()">Open Dialog Box</button>
     <dialog id="new-book-dialog">
-      <h1>this is the dialog box</h1>
-      <button  onclick="closeDialog()">Close Dialog Box</button>
+      <h2>Add a New Book</h2>
+      <form id="book-form">
+        <label for="book-title">Title:</label>
+        <input type="text" id="book-title" required />
+  
+        <label for="book-author">Author:</label>
+        <input type="text" id="book-author" required />
+  
+        <label for="book-pages">Pages:</label>
+        <input type="number" id="book-pages" required />
+  
+        <label for="book-read">
+          <input type="checkbox" id="book-read" />
+          Mark as Read
+        </label>
+        <button type="submit">Add Book</button>
+        <button onclick="closeDialog()">Close Dialog Box</button>
+      </form>
     </dialog>
-    <form>
-      <label>hello</label>
-      <input type="text"/>
-    </form>
-    <dialog>hello</dialog>
-
-
   </div>
 
 </body>

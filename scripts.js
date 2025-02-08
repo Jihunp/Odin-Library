@@ -1,5 +1,4 @@
 const libDisplay = document.getElementById("library-display");
-const displayButton = document.getElementById("display-book");
 
 const library = 
 [
@@ -32,11 +31,12 @@ function Book(title, author, pages, read, rating, id) {
   this.id = id;
 }
 
-// event handler
-function setDisplayLibrary() {
-  displayButton.addEventListener("click", displayLibrary);
-}
+//call display function library when page loads
+document.addEventListener("DOMContentLoaded", function() {
+  displayLibrary();
+})
 
+// displays all dummy information
 function displayLibrary() {
   libDisplay.innerHTML = "";
   library.forEach(book => {
